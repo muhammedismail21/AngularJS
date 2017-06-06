@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="firstName='John'">
+
+<p>The name is <span ng-bind="firstName"></span></p>
+
+
+  <p>Name: <input type="text" ng-model="firstName"></p>
+  <p ng-bind="firstName"></p>
+  
+  <p>First Expression: {{ 1 + 2 * 3 / 4 }}</p>
+  <p>Second Expression: {{ firstName }}</p>
+  
+</div>
+
+</body>
+</html>

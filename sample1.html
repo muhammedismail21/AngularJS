@@ -1,0 +1,31 @@
+<html ng-app="myModule" ng-init="employees=[ {id:'101', name:'Mohammed Ismail', salary:'$10000.00'},
+									 {id:'102', name:'Shoaib Ilyas', salary:'$6000.00'}
+								   ];">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="sample1.js"></script>
+      <body>
+            <div>			
+			<p ng-repeat="emp in employees">
+				Employee id: <input type="text" value="{{ emp.id }}" /><br/>
+				Name: <input type="text" value="{{ emp.name }}" /><br/>
+			</p>
+            </div>
+			
+			 <div ng-controller="myController">
+				<ul ng-repeat="product in products">
+					<li>
+						{{ product.name }} <br/>
+						{{ product.price }}
+					</li>
+				</ul>
+			 </div>
+			 <div ng-controller="orderController">
+				<table ng-repeat="order in orders">
+					<tr>
+						<td>{{ order.item }}</td>
+						<td>{{ order.qty }}</td>
+					</tr>
+				</table>
+			 </div>
+      </body>
+</html>

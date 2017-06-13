@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+	</head>
+	<body>
+		<div ng-app="" ng-init="bgCol='red';fgCol='white';pname='pen';price='$1.5';desc='For a great writers...'">
+				Product-Name:
+				<input type="text" value="{{pname}}" style="background-color:{{bgCol}};color:{{fgCol}};" />
+				<br/>
+				Price:
+				<input type="text" value="{{price}}" style="background-color:{{bgCol}};color:{{fgCol}};" />
+				<br/>
+				
+				<p style="background-color:{{bgCol}};color:{{fgCol}};">Description: {{desc}}  </p>
+		</div>
+	</body>
+</html>

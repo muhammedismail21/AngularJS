@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+	</head>
+	<body>
+		<div ng-app="" ng-init="arr=[11,22,33,44,55]">
+				<p style="background-color:{{bgCol}};color:{{fgCol}}">
+					<script>
+						for(i=0;i<5;i++){
+							document.write("{{arr["+i+"]}}<br/>");
+						}
+					</script>
+				</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		
+	</head>
+	<body>
+		<div ng-app="" ng-init="emparr=[employee={id:'101', name:'scott', dept:'IT'}]">
+				<p>
+				<script>
+						for(i=0;i<1;i++){
+							document.write("{{emparr[i].id}}<br/>");
+							document.write("{{emparr[i].employee.name}}<br/>");
+							document.write("{{emparr[i].employee.dept}}<br/>");
+						}
+					</script>				
+				</p>
+		</div>
+	</body>
+</html>

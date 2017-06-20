@@ -1,0 +1,23 @@
+<html>
+	<head>	  
+	  <script src="angular.min.js"></script>
+	</head>
+	<body style="background-color:lightblue;">
+	
+		<div ng-app="" ng-init="num1=0;num2=0;" style="text-align:center;">
+		  <b>BASIC CALCULATOR</b>
+		  <div>
+			Number 1: <br/><input type="number" min="0" ng-model="num1" />
+		  </div>
+		  <div>
+			Number 2: <br/><input type="number" min="0" ng-model="num2" />
+		  </div>
+		  <div>
+			<b>SUM:</b> {{ num1 + num2 }}
+			<br/><b>DIFFERENCE:</b> {{ num1 - num2 }}
+			<br/><b>PRODUCT:</b> {{ num1 * num2 }}
+			<br/><b>DIVISION:</b> {{ num1 / num2 }}
+		  </div>
+		</div>
+	</body>
+</html>

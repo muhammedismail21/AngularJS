@@ -1,0 +1,26 @@
+<html>
+	<head>	  
+	  <script src="angular.min.js"></script>
+	</head>
+	<body style="background-color:lightblue;">
+	
+		<div ng-app="" ng-init="r=255;g=255;b=255;" style="text-align:center;">
+		  <b>COLORS</b>
+		  <div>
+			RED: <br/><input type="number" min="0" ng-model="r" />
+		  </div>
+		  <div>
+			GREEN: <br/><input type="number" min="0" ng-model="g" />
+		  </div>
+		  <div>
+			BLUE: <br/><input type="number" min="0" ng-model="b" />
+		  </div >
+		  <div id="redDiv"  style="width:200px;height:100px;border:solid 2px white;background-color:rgb({{r}},0,0);">		
+		  </div>
+		  <div id="greenDiv" style="width:200px;height:100px;border:solid 2px white;background-color:rgb(0,{{g}},0);">
+		  </div>
+		  <div id="blueDiv" style="width:200px;height:100px;border:solid 2px white;background-color:rgb(0,0,{{b}});">
+		  </div>
+		</div>
+	</body>
+</html>

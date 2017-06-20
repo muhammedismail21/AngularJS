@@ -1,0 +1,83 @@
+<html>
+	<head>	  
+	  <script src="angular.min.js"></script>
+	</head>
+	<body style="background-color:lightblue;">
+	
+		<div ng-app="" ng-init="r=255;g=255;b=255;" style="text-align:center;">
+		  <b>COLORS</b>
+		  <div>
+			RED: <br/><input type="number" min="0" ng-model="r" />
+		  </div>
+		  <div>
+			GREEN: <br/><input type="number" min="0" ng-model="g" />
+		  </div>
+		  <div>
+			BLUE: <br/><input type="number" min="0" ng-model="b" />
+		  </div >
+			  <table>
+			  <tr>
+					<td style="color:red;">
+					 RED
+					</td>
+					<td style="color:green;">
+					 GREEN
+					</td>
+					<td style="color:blue;">
+					 BLUE
+					</td>
+				</tr>
+				<tr>
+					<td>
+					  <div id="redDiv"  style="width:200px;height:100px;border:solid 2px white;background-color:rgb({{r}},0,0);">		
+					  </div>
+					</td>
+					<td>
+					  <div id="greenDiv" style="width:200px;height:100px;border:solid 2px white;background-color:rgb(0,{{g}},0);">
+					  </div>
+					</td>
+					<td>
+					  <div id="blueDiv" style="width:200px;height:100px;border:solid 2px white;background-color:rgb(0,0,{{b}});">
+					  </div>
+					</td>
+				</tr>
+				<tr>
+					<td style="color:rgb({{r}},{{g}},0);">
+					 RED AND GREEN
+					</td>
+					<td style="color:rgb({{r}},0,{{b}});">
+					 RED AND BLUE
+					</td>
+					<td style="color:rgb(0,{{g}},{{b}});">
+					 GREEN AND BLUE
+					</td>
+				</tr>
+				<tr>
+					<td>
+					  <div id="redDiv"  style="width:200px;height:100px;border:solid 2px white;background-color:rgb({{r}},{{g}},0);">		
+					  </div>
+					</td>
+					<td>
+					  <div id="greenDiv" style="width:200px;height:100px;border:solid 2px white;background-color:rgb({{r}},0,{{b}});">
+					  </div>
+					</td>
+					<td>
+					  <div id="blueDiv" style="width:200px;height:100px;border:solid 2px white;background-color:rgb(0,{{g}},{{b}});">
+					  </div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" style="color:rgb({{r}},{{g}},{{b}});">
+					 RED, GREEN AND BLUE
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+					  <div id="blueDiv" style="width:600px;height:100px;border:solid 2px white;background-color:rgb({{r}},{{g}},{{b}});">
+					  </div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

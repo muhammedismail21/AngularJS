@@ -1,0 +1,29 @@
+<html ng-app="stud">
+	<head>
+		<title>
+			Student
+		</title>
+		
+		<script src="angular.min.js"></script>
+		<script src="student.js"></script>
+	</head>
+	<body>
+		<h1 style="color:navy;">Student Form</h1>
+		<hr style="color:navy;"/ >
+		<div ng-controller="StudentController as student">
+			Student Id: <input type="text" ng-model="student.sid" />
+			<br/>
+			First-Name: <input type="text" ng-model="student.fname" />
+			<br/>			
+			Last-Name: <input type="text" ng-model="student.lname" />
+			<br/>
+			Email: <input type="email" ng-model="student.email" />
+			<br/>
+			Course: <select ng-model="student.course">
+						<option ng-repeat="c in student.courses">{{c}}</option>
+					</select>
+			<br/>
+			<button ng-click="student.register()">Register</button>
+		</div>
+	</body>
+</html>

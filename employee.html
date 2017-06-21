@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Employee</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="employee.js"></script>
+	</head>
+	<body>
+		<div ng-app="emp" ng-controller="EmployeeController as e">
+			Employee Id: <input type="text" ng-model="e.eid" />
+			<br/>
+			First-Name: <input type="text" ng-model="e.fname" />
+			<br/>
+			Last-Name: <input type="text" ng-model="e.lname" />
+			<br/>
+			Salary: <input type="number" ng-model="e.salary" />
+			<br/>
+			<button ng-click="e.getEmp()" >Get Emp</button>
+		</div>
+	</body>
+</html>

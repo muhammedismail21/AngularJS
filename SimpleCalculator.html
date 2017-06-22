@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Simple Calculator</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="calculator.js"></script>
+	</head>
+	<body>
+		<h1 style="color:navy;">Simple Calculator</h1>
+		<hr style="color:navy;"/>
+		<div ng-app="calc" ng-controller="CalculatorController as c">
+			First-Number: <br/><input type="number" min="0" ng-model="c.num1"/>
+			<br/>
+			Second-Number: <br/><input type="number" min="0" ng-model="c.num2"/>
+			<br/>
+			Result: {{ c.res }}
+			<br/>
+			<button ng-click="c.add()">Add</button>&nbsp;
+			<button ng-click="c.sub()">Sub</button>&nbsp;
+			<button ng-click="c.mul()">Mul</button>&nbsp;
+			<button ng-click="c.div()">Div</button>&nbsp;
+		</div>
+	</body>
+</html>
